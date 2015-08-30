@@ -1,4 +1,6 @@
 node_modules
-bower_components
 .sass-cache
 dist
+bower_components/jquery/
+bower_components/font-awesome/
+bower_components/animate.css/

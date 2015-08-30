@@ -1,0 +1,29 @@
+- lists = [{text: 'Introduction', link: 'intro'}, {text: 'Features', link: 'feature'}, {text: 'Responsive Design', link: 'responsive'}, {text: 'Portfolio', link: 'portfolio'}, {text: 'Team', link: 'team'}, {text: 'Get in Touch', link: 'contact'}]
+
+header.header
+  #js-nav.header__nav
+    .container
+      .row
+        .col-xs-offset-1.col-xs-10.col-sm-offset-2.col-sm-8
+          nav.nav
+            ul
+              each list, i in lists
+                li.nav__item
+                  a(href="##{list.link}")= list.text
+                    span.nav__icon
+                      .fa.fa-angle-right
+  .header__hero
+    .container
+      .row
+        .col-xs-12.text-right
+          span#js-nav-button.nav-button
+      .row
+        .col-xs-12.text-center
+          .header__main
+            h1.header__title.animated.fadeInDown
+              | Halcyon
+              span Days
+            p.header__copy.animated.fadeInUp.delay05s
+              | An exclusive HTML5/CSS3 freebie by Peter Finlan, for
+              em Codrops
+            a.header__btn.btn.btn--green(href="http://tympanus.net/codrops/?p=19439") Back to the article

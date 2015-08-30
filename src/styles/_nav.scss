@@ -1,0 +1,22 @@
+.nav {
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+    > a {
+      position: relative;
+      display: block;
+      color: rgba(255, 255, 255, .6);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      transition: all .5s ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    right: 0;
+  }
+}

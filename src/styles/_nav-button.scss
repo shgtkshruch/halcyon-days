@@ -1,0 +1,47 @@
+.nav-button {
+  position: relative;
+  display: inline-block;
+  background-color: $color-black;
+  cursor: pointer;
+  &,
+  &:before,
+  &:after {
+    width: 35px;
+    height: 5px;
+    transition: all .3s ease-in-out;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 5px;
+    background-color: $color-black;
+  }
+  &:before {
+    top: 10px;
+  }
+  &:after {
+    bottom: 10px;
+  }
+  &:hover {
+    &:before {
+      top: 13px;
+    }
+    &:after {
+      bottom: 13px;
+    }
+  }
+  &.active {
+    background-color: transparent;
+    &:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+  }
+}

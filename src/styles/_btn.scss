@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &--green {
+    color: #fff;
+    background-color: $color-green;
+    box-shadow: 0 3px 0 0 darken($color-green, 20%);
+    &:hover {
+      background-color: lighten($color-green, 15%);
+    }
+  }
+}

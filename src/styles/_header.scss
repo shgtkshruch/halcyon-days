@@ -1,0 +1,35 @@
+.header {
+  &__nav {
+    display: none;
+    background-color: #242830;
+  }
+  &__hero {
+    padding-top: 65px;
+    padding-bottom: 300px;
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__main {
+    padding-top: 170px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    > span {
+      display: inline-block;
+      color: #a1a9b0;
+    }
+  }
+  &__copy {
+    letter-spacing: 1px;
+  }
+  &__btn {
+    margin-top: 80px;
+  }
+}
+
