@@ -9,6 +9,7 @@
     background-color: $color-green;
     box-shadow: 0 3px 0 0 darken($color-green, 20%);
     &:hover {
+      color: #fff;
       background-color: lighten($color-green, 15%);
     }
   }
