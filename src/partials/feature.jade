@@ -1,0 +1,14 @@
+- features = [{icon: 'laptop', heading: 'Degital Design'}, {icon: 'code', heading: 'Web Development'}, {icon: 'heart', heading: 'Creative Direction'}]
+
+section#feature.section
+  h1.section__heading Love what you do, and you'll do it well
+  .container
+    .row
+      each feature, i in features
+        .col-xs-offset-1.col-xs-10.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-4
+          .feature-item
+            .feature-item__icon
+              i(class="fa fa-#{feature.icon} shadow")
+            h2.feature-item__heading= feature.heading
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
