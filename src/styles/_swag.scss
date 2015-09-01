@@ -1,0 +1,29 @@
+.swag {
+  &__heading {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    > span {
+      display: block;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $color-green;
+    &:hover {
+      color: #fff;
+      background-color: lighten($color-green, 10%);
+    }
+  }
+}
