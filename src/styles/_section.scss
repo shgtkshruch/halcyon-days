@@ -4,6 +4,13 @@
   &--dark-bg {
     background-color: #f3f5f8;
   }
+  &--responsive {
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #fff;
+    }
+  }
   &__heading {
     margin-bottom: 70px;
     padding-bottom: 30px;
@@ -16,5 +23,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
+  }
+  &__text {
+    margin-bottom: 15px;
   }
 }

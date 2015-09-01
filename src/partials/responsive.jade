@@ -1,0 +1,16 @@
+- lists = [{heading: 'Responsive Design Specialists'}, {heading: 'Bootstrap Professionals'}]
+section#responsive.section.section--dark-bg.section--responsive.responsive
+  .container-fluid.nopadding
+    .container.responsive__body
+      .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-7.col-md-5
+        .responsive__main
+          #js-flexslider
+            ul.slides
+              each list, i in lists
+                li.text-center
+                  h2.section__heading.section__heading--small= list.heading
+                  p.section__text ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  p.section__text Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
+                  p.section__text Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
+    .hidden-xs.hidden-sm
+      .responsive__iphone

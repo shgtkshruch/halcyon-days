@@ -1,0 +1,27 @@
+.responsive {
+  &__body {
+    @media (min-width: $screen-md) {
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+  }
+  &__main {
+    @media (min-width: $screen-md) {
+      padding-top: 120px;
+    }
+  }
+  &__iphone {
+    float: left;
+    width: 50%;
+    height: 650px;
+    background-color: #f3f5f8;
+    background-image: url('../images/iphone-bg.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    box-shadow: inset -15px 0px 40px -15px rgba(0, 0, 0, 0.1);
+    @media (min-width: $screen-lg) {
+      background-position: 200px 30px;
+    }
+  }
+}

@@ -16,6 +16,7 @@
   "dependencies": {
     "animate.css": "~3.4.0",
     "bootstrap-sass": "~3.3.5",
+    "flexslider": "~2.5.0",
     "font-awesome": "~4.4.0",
     "jquery": "~2.1.4"
   }
