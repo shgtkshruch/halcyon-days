@@ -1,4 +1,4 @@
-$ '#js-flexslider'
+$ '#js-flexslider--responsive, #js-flexslider--portfolio'
   .flexslider
     animation: 'slide'
     pauseOnHover: true

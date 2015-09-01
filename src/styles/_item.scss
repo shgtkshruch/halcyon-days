@@ -1,0 +1,22 @@
+.item {
+  margin-bottom: 70px;
+  text-align: center;
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__heading {
+    font-size: 15px;
+    text-transform: uppercase;
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      border: 2px solid $color-green;
+      margin: 25px auto;
+    }
+  }
+}
