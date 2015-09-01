@@ -1,0 +1,15 @@
+.ignite {
+  &__btn {
+    display: inline-block;
+    padding: 25px 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover {
+      color: $color-green;
+      border-color: $color-green;
+    }
+  }
+}
