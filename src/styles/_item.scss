@@ -5,8 +5,10 @@
     margin-bottom: 0;
   }
   &__img {
-    width: 100%;
     margin-bottom: 30px;
+    &--full {
+      width: 100%;
+    }
   }
   &__heading {
     font-size: 15px;
@@ -18,5 +20,8 @@
       border: 2px solid $color-green;
       margin: 25px auto;
     }
+  }
+  &__text {
+    margin-bottom: 15px;
   }
 }

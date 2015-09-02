@@ -1,0 +1,21 @@
+- names = ['jon show', 'cersei lannister', 'jamie lannister']
+- icons = ['dribbble', 'twitter', 'envelope']
+section#team.section
+  h2.section__heading we're team that adore what we do
+  .container
+    .row
+      #js-flexslider--team.flex-container
+        ul.slides
+          - for (var i = 0; i < 2; i++)
+            li
+              each name, i in names
+                .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-4
+                  .item
+                    img.item__img(src="images/item--team__img-#{i+1}.png")
+                    h3.item__heading= name
+                    p.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                    ul.btn-group
+                      each icon, j in icons
+                        li
+                          a.btn--social(href="#")
+                            i(class="fa fa-#{icon}")

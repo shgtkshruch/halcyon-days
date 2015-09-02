@@ -1,9 +1,10 @@
-.flex-control-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.flexslider--portfolio {
-  position: relative;
+.flex {
+  &-container {
+    position: relative;
+  }
+  &-control-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
