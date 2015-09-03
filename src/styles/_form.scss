@@ -1,0 +1,20 @@
+.form {
+  &__input {
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+  }
+  &__submit {
+    padding: 20px;
+    border: 1px solid rgba($color-green, .5);
+    color: #fff;
+    background-color: rgba($color-green, .5);
+    text-transform: uppercase;
+    transition: all .5s ease;
+    &:hover {
+      background-color: $color-green;
+    }
+  }
+}

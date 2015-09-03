@@ -25,6 +25,18 @@
     padding-bottom: 70px;
     background-color: #242830;
   }
+  &--subscribe {
+    padding-top: 120px;
+    padding-bottom: 140px;
+    background-image: url('../images/keyboard-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  &--contact {
+    position: relative;
+  }
   &__heading {
     margin-bottom: 70px;
     padding-bottom: 30px;
