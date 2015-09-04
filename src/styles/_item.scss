@@ -4,6 +4,17 @@
   @media (min-width: $screen-md) {
     margin-bottom: 0;
   }
+  &--contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 3px 0px 0px #f0f2f4;
+    transition: all .5s ease-in-out;
+    &:hover {
+      transform: translate(0, -15px);
+      box-shadow: 0 3px 0 0 $color-green;
+    }
+  }
   &__img {
     margin-bottom: 30px;
     &--full {
@@ -13,6 +24,17 @@
   &__heading {
     font-size: 15px;
     text-transform: uppercase;
+    .item--contact & {
+      font-size: 20px;
+      span {
+        display: block;
+        margin-top: 15px;
+        color: $color-green;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
     &:after {
       content: '';
       display: block;

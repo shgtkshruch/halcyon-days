@@ -1,0 +1,22 @@
+- items = [{icon: 'map-marker', heading: 'address', text: 'Level 6, 23 Pitt St, Sydney'}, {icon: 'mobile', heading: 'phone', text: '+61 9 211 3747'}, {icon: 'paper-plane', heading: 'email', text: 'hey@halcyonday.com'}]
+- icons = ['dribbble', 'twitter', 'envelope']
+section#contact.section.section--dark-bg.section--contact.text-center
+  h2.section__heading Drop us a line
+  .container
+    .row
+      each item, i in items
+        .col-xs-12.col-sm-12.col-md-4
+          .item.item--contact
+            h3.item__heading
+              i(class="fa fa-#{item.icon}")
+              span= item.heading
+            p.item__text= item.text
+    .row
+      .col-xs-12
+        ul.btn-group.mt70
+          each icon, j in icons
+            li
+              a.btn--social(href="#")
+                i(class="fa fa-#{icon}")
+  a.go-to-top(href="#top")
+    i.fa.fa-chevron-up
