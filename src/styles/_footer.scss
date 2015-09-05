@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #242830;
+  a {
+    color: #a1a9b0;
+    transition: color .5s;
+    &:hover {
+      color: $color-green;
+    }
+  }
+  &__text {
+    color: #fff;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.legal {
+  margin-bottom: 15px;
+  text-align: center;
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  &__item {
+    display: inline-block;
+    &:first-child {
+      position: relative;
+      padding-right: 5px;
+      margin-right: 5px;
+      &:after {
+        content: '|';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        color: #fff;
+      }
+    }
+  }
+}

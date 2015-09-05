@@ -1,0 +1,15 @@
+footer.footer
+  .container
+    .row
+      .col-xs-12.col-md-6
+        ul.legal
+          each val, i in ['Terms & Conditions', 'Legals']
+            li.legal__item
+              a(href="#")= val
+      .col-xs-12.col-md-6.text-right
+        p.footer__text
+          | Design & Developed by&nbsp
+          a(href="http://www.peterfinlan.com") Peter Finlan
+          | &nbsp exclusively for&nbsp
+          a(href="http://tympanus.net/codrops") Codrops
+
