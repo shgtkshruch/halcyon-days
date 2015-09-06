@@ -6,7 +6,7 @@ section#contact.section.section--dark-bg.section--contact.text-center
     .row
       each item, i in items
         .col-xs-12.col-sm-12.col-md-4
-          .item.item--contact
+          .item.item--contact(class="#{i == 2 ? 'mb0' : ''}")
             h3.item__heading
               i(class="fa fa-#{item.icon}")
               span= item.heading
