@@ -9,6 +9,12 @@ section#portfolio.section
               each item, i in items
                 .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-4
                   .item
-                    img.item__img.item__img--full(src="images/item--portfolio__img-#{i+1}.jpg" alt="")
+                    .item__image
+                      img.item__img.item__img--full(src="images/item--portfolio__img-#{i+1}.jpg" alt="")
+                      .item__overlay
+                        a(href="#")
+                          i.fa.fa-search
+                          br
+                          | View More
                     h2.item__heading= item.heading
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
