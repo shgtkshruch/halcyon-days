@@ -1,11 +1,11 @@
-- items = [{icon: 'map-marker', heading: 'address', text: 'Level 6, 23 Pitt St, Sydney'}, {icon: 'mobile', heading: 'phone', text: '+61 9 211 3747'}, {icon: 'paper-plane', heading: 'email', text: 'hey@halcyonday.com'}]
+- items = [{icon: 'map-marker', heading: 'address', text: 'Level 6, 23 Pitt St, Sydney', class: ''}, {icon: 'mobile', heading: 'phone', text: '+61 9 211 3747', class: 'delay05s'}, {icon: 'paper-plane', heading: 'email', text: 'hey@halcyonday.com', class: 'delay1s'}]
 - icons = ['dribbble', 'twitter', 'envelope']
 section#contact.section.section--dark-bg.section--contact.text-center
   h2.section__heading Drop us a line
   .container
     .row
       each item, i in items
-        .col-xs-12.col-sm-12.col-md-4
+        .col-xs-12.col-sm-12.col-md-4.wp6(class="#{item.class}")
           .item.item--contact(class="#{i == 2 ? 'mb0' : ''}")
             h3.item__heading
               i(class="fa fa-#{item.icon}")

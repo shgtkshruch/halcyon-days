@@ -19,6 +19,7 @@
     "flexslider": "~2.5.0",
     "font-awesome": "~4.4.0",
     "jquery": "~2.1.4",
-    "jquery-smooth-scroll": "~1.5.5"
+    "jquery-smooth-scroll": "~1.5.5",
+    "waypoints": "~4.0.0"
   }
 }

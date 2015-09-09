@@ -1,5 +1,6 @@
-- names = ['jon show', 'cersei lannister', 'jamie lannister']
+- items = [{name: 'jon show', class: ''}, {name: 'cersei lannister', class: 'delay05s'}, {name: 'jamie lannister', class: 'delay1s'}]
 - icons = ['dribbble', 'twitter', 'envelope']
+
 section#team.section
   h2.section__heading we're team that adore what we do
   .container
@@ -8,11 +9,11 @@ section#team.section
         ul.slides
           - for (var i = 0; i < 2; i++)
             li
-              each name, i in names
-                .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-4
+              each item, i in items
+                .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-4.wp5(class="#{item.class}")
                   .item
                     img.item__img(src="images/item--team__img-#{i+1}.png")
-                    h3.item__heading= name
+                    h3.item__heading= item.name
                     p.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
                     ul.btn-group
                       each icon, j in icons
